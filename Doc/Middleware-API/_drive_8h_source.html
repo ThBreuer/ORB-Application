@@ -1,0 +1,289 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ORB - Middleware: Application Programming Interface (API): Drive.h Quellcode</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">ORB - Middleware: Application Programming Interface (API)
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Erzeugt von Doxygen 1.9.6 -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_drive_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle"><div class="title">Drive.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">//*******************************************************************</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"></span><span class="comment">//*******************************************************************</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#ifndef _DRIVE_H</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#define _DRIVE_H</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">//*******************************************************************</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;Common/Src/ORB.h&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">//*******************************************************************</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;math.h&gt;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#ifndef M_PI</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#define M_PI    3.14159265358979323846f</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">//*******************************************************************</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="class_drive.html">   34</a></span><span class="comment"></span><span class="keyword">class </span><a class="code hl_class" href="class_drive.html">Drive</a></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>{</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="comment">//---------------------------------------------------------------</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="class_drive_1_1_odometrie.html">   42</a></span><span class="comment"></span>    <span class="keyword">class </span><a class="code hl_class" href="class_drive_1_1_odometrie.html">Odometrie</a></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    {</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>      <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        <span class="comment">//***********************************************************</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <span class="keyword">class </span>Distance</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        {</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>          <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            <span class="keywordtype">int</span> offset;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            <a class="code hl_class" href="class_drive.html">Drive</a> &amp;robo;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            Distance( <a class="code hl_class" href="class_drive.html">Drive</a> &amp;r) : robo(r) { reset(); }</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            <span class="keywordtype">void</span> reset() { offset = robo.distance();}</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>          <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            <span class="keyword">virtual</span> <span class="keywordtype">int</span> get()  { <span class="keywordflow">return</span>(robo.distance() - offset ); }</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>          <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="class_drive_1_1_odometrie.html">Odometrie</a>;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        };</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        <span class="comment">//***********************************************************</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <span class="keyword">class </span>Angle</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        {</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>          <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            <span class="keywordtype">int</span> offset;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            <a class="code hl_class" href="class_drive.html">Drive</a> &amp;robo;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            Angle( <a class="code hl_class" href="class_drive.html">Drive</a> &amp;r) : robo(r) { reset(); }</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            <span class="keywordtype">void</span> reset() { offset = robo.angle();}</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>          <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            <span class="keyword">virtual</span> <span class="keywordtype">int</span> get()  { <span class="keywordflow">return</span>(robo.angle() - offset ); }</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>          <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="class_drive_1_1_odometrie.html">Odometrie</a>;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        };</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>      <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        <span class="comment">//-----------------------------------------------------------</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="class_drive_1_1_odometrie.html#a858b9505a995df5536d0c150d8454fd5">   79</a></span><span class="comment"></span>        <a class="code hl_function" href="class_drive_1_1_odometrie.html#a858b9505a995df5536d0c150d8454fd5">Odometrie</a>( <a class="code hl_class" href="class_drive.html">Drive</a> &amp;roboter )</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        : angle( roboter ),</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>          distance( roboter )</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        {</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>          <a class="code hl_function" href="class_drive_1_1_odometrie.html#a3aea9deb2a0bfea9ff05a898f4822e31">reset</a>();</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        }</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        <span class="comment">//-----------------------------------------------------------</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="class_drive_1_1_odometrie.html#a3aea9deb2a0bfea9ff05a898f4822e31">   89</a></span><span class="comment"></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_drive_1_1_odometrie.html#a3aea9deb2a0bfea9ff05a898f4822e31">reset</a>( <span class="keywordtype">void</span> )</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        {</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>          distance.reset();</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>          angle.reset();</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        }</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        <span class="comment">//-----------------------------------------------------------</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="class_drive_1_1_odometrie.html#ac2d1fbd7214cb8a5ce08083bb9a8adf2">   99</a></span><span class="comment"></span>        <span class="keywordtype">int</span> <a class="code hl_function" href="class_drive_1_1_odometrie.html#ac2d1fbd7214cb8a5ce08083bb9a8adf2">getDistance</a>( <span class="keywordtype">void</span> )</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        {</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>          <span class="keywordflow">return</span>( distance.get() );</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        }</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        <span class="comment">//-----------------------------------------------------------</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="class_drive_1_1_odometrie.html#afecffcb0713a1804b2b94564b21a44d9">  108</a></span><span class="comment"></span>        <span class="keywordtype">int</span> <a class="code hl_function" href="class_drive_1_1_odometrie.html#afecffcb0713a1804b2b94564b21a44d9">getAngle</a>( <span class="keywordtype">void</span> )</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        {</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>          <span class="keywordflow">return</span>( angle.get() );</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        }</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>      <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        <span class="comment">//-----------------------------------------------------------</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>        Angle  angle;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>        Distance distance;</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    };</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>  <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    <span class="comment">//---------------------------------------------------------------</span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    ORB  &amp;orb;</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    <span class="keywordtype">float</span> vmax;</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <span class="keywordtype">float</span> faktorMM2Tics;</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    <span class="keywordtype">float</span> faktorWinkel2Diff;</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    <a class="code hl_class" href="class_motor.html">Motor</a> &amp;mLi;</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    <a class="code hl_class" href="class_motor.html">Motor</a> &amp;mRe;</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    <span class="keywordtype">int</span> dLi;</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    <span class="keywordtype">int</span> dRe;</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>  <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    <span class="comment">//---------------------------------------------------------------</span></div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno"><a class="line" href="class_drive.html#ac774ab32d2cc2f5aab38b5ec8342b852">  142</a></span><span class="comment"></span>    <a class="code hl_function" href="class_drive.html#ac774ab32d2cc2f5aab38b5ec8342b852">Drive</a>( <a class="code hl_class" href="class_motor.html">Motor</a>  &amp;motorLeft,</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>           <a class="code hl_class" href="class_motor.html">Motor</a>  &amp;motorRight,</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>           <span class="keywordtype">int</span>     vmax,</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>           <span class="keywordtype">float</span>   wheelDiameter,</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>           <span class="keywordtype">float</span>   trackWidth )</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    : orb( *orbPtr    )</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    , mLi( motorLeft  )</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    , mRe( motorRight )</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span> </div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    {</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>      this-&gt;vmax = (float)vmax;</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> </div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>      <span class="comment">// abgeleitete Groessen:</span></div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>      faktorMM2Tics     = 1000.0f/(M_PI*(float)wheelDiameter);</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>      faktorWinkel2Diff = (float)trackWidth*M_PI/360.0f;</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span> </div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>      dLi = mLi.<a class="code hl_function" href="class_motor.html#a9f3c77aed35d83ad08ccad20a9c0ba1b">getPosition</a>();</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>      dRe = mRe.<a class="code hl_function" href="class_motor.html#a9f3c77aed35d83ad08ccad20a9c0ba1b">getPosition</a>();</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    }</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span> </div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>  <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    <span class="comment">//---------------------------------------------------------------</span></div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> fahre( <span class="keywordtype">int</span> li, <span class="keywordtype">int</span> re )</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    {</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>      mLi.<a class="code hl_function" href="class_motor.html#a6450fc94fe4ba577673acbd2715c2e3a">setSpeed</a>( 0 );</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>      mRe.<a class="code hl_function" href="class_motor.html#a6450fc94fe4ba577673acbd2715c2e3a">setSpeed</a>( 0 );</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> </div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>      orb.wait( 200 );</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span> </div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>      <span class="keywordtype">int</span> targetLi = mLi.<a class="code hl_function" href="class_motor.html#a9f3c77aed35d83ad08ccad20a9c0ba1b">getPosition</a>() + li;</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>      <span class="keywordtype">int</span> targetRe = mRe.<a class="code hl_function" href="class_motor.html#a9f3c77aed35d83ad08ccad20a9c0ba1b">getPosition</a>() + re;</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span> </div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>      <span class="comment">// Passe Geschwindigkeit der beiden Raeder so an,</span></div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>      <span class="comment">// dass diese gleichzeitig ihr Ziel erreichen</span></div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>      <span class="keywordtype">float</span> dges  = (fabs((<span class="keywordtype">float</span>)li) + fabs((<span class="keywordtype">float</span>)re));</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span> </div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>      mLi.<a class="code hl_function" href="class_motor.html#a43aa9c26cd425e2a6bca869515681ed0">setPosition</a>(  vmax * (<span class="keywordtype">float</span>)li/dges, targetLi );</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>      mRe.<a class="code hl_function" href="class_motor.html#a43aa9c26cd425e2a6bca869515681ed0">setPosition</a>(  vmax * (<span class="keywordtype">float</span>)re/dges, targetRe );</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span> </div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>      orb.wait( 200 );</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span> </div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>      <span class="keywordflow">while</span>(   fabs( (<span class="keywordtype">float</span>)mLi.<a class="code hl_function" href="class_motor.html#a9f3c77aed35d83ad08ccad20a9c0ba1b">getPosition</a>() - targetLi ) &gt; 1</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>            || fabs( (<span class="keywordtype">float</span>)mRe.<a class="code hl_function" href="class_motor.html#a9f3c77aed35d83ad08ccad20a9c0ba1b">getPosition</a>() - targetRe ) &gt; 1 )</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>      {</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>      }</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span> </div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>      orb.wait( 200 );</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>    }</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span> </div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>  <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    <span class="comment">//---------------------------------------------------------------</span></div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> distanceReset( <span class="keywordtype">void</span> )</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>    {</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>      dLi = mLi.<a class="code hl_function" href="class_motor.html#a9f3c77aed35d83ad08ccad20a9c0ba1b">getPosition</a>();</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>      dRe = mRe.<a class="code hl_function" href="class_motor.html#a9f3c77aed35d83ad08ccad20a9c0ba1b">getPosition</a>();</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>    }</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span> </div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>    <span class="comment">//---------------------------------------------------------------</span></div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>    <span class="keyword">virtual</span> <span class="keywordtype">int</span> distance( <span class="keywordtype">void</span> )</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>    {</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>      <span class="keywordtype">int</span> li = mLi.<a class="code hl_function" href="class_motor.html#a9f3c77aed35d83ad08ccad20a9c0ba1b">getPosition</a>()-dLi;</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>      <span class="keywordtype">int</span> re = mRe.<a class="code hl_function" href="class_motor.html#a9f3c77aed35d83ad08ccad20a9c0ba1b">getPosition</a>()-dRe;</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span> </div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>      <span class="keywordflow">return</span>( 0.5*(li + re)/faktorMM2Tics+0.5 );</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>    }</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span> </div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>    <span class="comment">//---------------------------------------------------------------</span></div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>    <span class="keyword">virtual</span> <span class="keywordtype">int</span> angle( <span class="keywordtype">void</span> )</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>    {</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>      <span class="keywordtype">int</span> li = mLi.<a class="code hl_function" href="class_motor.html#a9f3c77aed35d83ad08ccad20a9c0ba1b">getPosition</a>()-dLi;</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>      <span class="keywordtype">int</span> re = mRe.<a class="code hl_function" href="class_motor.html#a9f3c77aed35d83ad08ccad20a9c0ba1b">getPosition</a>()-dRe;</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span> </div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>      <span class="keywordflow">return</span>( (<span class="keywordtype">int</span>)(0.5*(li - re)/(faktorMM2Tics*faktorWinkel2Diff)+0.5) );</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>    }</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span> </div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>  <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>    <span class="comment">//---------------------------------------------------------------</span></div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno"><a class="line" href="class_drive.html#adc4fc4c332bd61876d6282c4d5fccb89">  226</a></span><span class="comment"></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_drive.html#adc4fc4c332bd61876d6282c4d5fccb89">track</a>( <span class="keywordtype">float</span> distance, <span class="keywordtype">float</span> angle )</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>    {</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>      <span class="keywordtype">float</span> li = distance + faktorWinkel2Diff*angle;</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>      <span class="keywordtype">float</span> re = distance - faktorWinkel2Diff*angle;</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span> </div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>      fahre( faktorMM2Tics*li, faktorMM2Tics*re );</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>    }</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span> </div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>    <span class="comment">//---------------------------------------------------------------</span></div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno"><a class="line" href="class_drive.html#a226132a9cdc7eaf3deb9929919b4d28f">  239</a></span><span class="comment"></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_drive.html#a226132a9cdc7eaf3deb9929919b4d28f">speed</a>( <span class="keywordtype">float</span> left, <span class="keywordtype">float</span> right )</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>    {</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>      mLi.<a class="code hl_function" href="class_motor.html#a6450fc94fe4ba577673acbd2715c2e3a">setSpeed</a>( faktorMM2Tics*left );</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>      mRe.<a class="code hl_function" href="class_motor.html#a6450fc94fe4ba577673acbd2715c2e3a">setSpeed</a>( faktorMM2Tics*right );</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>    }</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span> </div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>    <span class="comment">//---------------------------------------------------------------</span></div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno"><a class="line" href="class_drive.html#a52b05247d861070fa5c781b85fa14323">  250</a></span><span class="comment"></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_drive.html#a52b05247d861070fa5c781b85fa14323">power</a>( <span class="keywordtype">float</span> left, <span class="keywordtype">float</span> right )</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>    {</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>      mLi.<a class="code hl_function" href="class_motor.html#a91c5dab130c51e0cc9a560f42bda0691">setPower</a>( left );</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>      mRe.<a class="code hl_function" href="class_motor.html#a91c5dab130c51e0cc9a560f42bda0691">setPower</a>( right );</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>    }</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span> </div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>    <span class="comment">//---------------------------------------------------------------</span></div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno"><a class="line" href="class_drive.html#a888baccc9f5823aa32fd07fd0a29343b">  259</a></span><span class="comment"></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_drive.html#a888baccc9f5823aa32fd07fd0a29343b">brake</a>( <span class="keywordtype">void</span> )</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>    {</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>      mLi.<a class="code hl_function" href="class_motor.html#a888baccc9f5823aa32fd07fd0a29343b">brake</a>();</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>      mRe.<a class="code hl_function" href="class_motor.html#a888baccc9f5823aa32fd07fd0a29343b">brake</a>();</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>    }</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>};</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclass_drive_1_1_odometrie_html"><div class="ttname"><a href="class_drive_1_1_odometrie.html">Drive::Odometrie</a></div><div class="ttdoc">Bewegungsmessung eines Roboters.</div><div class="ttdef"><b>Definition:</b> Drive.h:43</div></div>
+<div class="ttc" id="aclass_drive_1_1_odometrie_html_a3aea9deb2a0bfea9ff05a898f4822e31"><div class="ttname"><a href="class_drive_1_1_odometrie.html#a3aea9deb2a0bfea9ff05a898f4822e31">Drive::Odometrie::reset</a></div><div class="ttdeci">void reset(void)</div><div class="ttdef"><b>Definition:</b> Drive.h:89</div></div>
+<div class="ttc" id="aclass_drive_1_1_odometrie_html_a858b9505a995df5536d0c150d8454fd5"><div class="ttname"><a href="class_drive_1_1_odometrie.html#a858b9505a995df5536d0c150d8454fd5">Drive::Odometrie::Odometrie</a></div><div class="ttdeci">Odometrie(Drive &amp;roboter)</div><div class="ttdef"><b>Definition:</b> Drive.h:79</div></div>
+<div class="ttc" id="aclass_drive_1_1_odometrie_html_ac2d1fbd7214cb8a5ce08083bb9a8adf2"><div class="ttname"><a href="class_drive_1_1_odometrie.html#ac2d1fbd7214cb8a5ce08083bb9a8adf2">Drive::Odometrie::getDistance</a></div><div class="ttdeci">int getDistance(void)</div><div class="ttdef"><b>Definition:</b> Drive.h:99</div></div>
+<div class="ttc" id="aclass_drive_1_1_odometrie_html_afecffcb0713a1804b2b94564b21a44d9"><div class="ttname"><a href="class_drive_1_1_odometrie.html#afecffcb0713a1804b2b94564b21a44d9">Drive::Odometrie::getAngle</a></div><div class="ttdeci">int getAngle(void)</div><div class="ttdef"><b>Definition:</b> Drive.h:108</div></div>
+<div class="ttc" id="aclass_drive_html"><div class="ttname"><a href="class_drive.html">Drive</a></div><div class="ttdoc">Steuerung eines Roboter-Fahrwerks mit zwei Motoren (Differential-Drive)</div><div class="ttdef"><b>Definition:</b> Drive.h:35</div></div>
+<div class="ttc" id="aclass_drive_html_a226132a9cdc7eaf3deb9929919b4d28f"><div class="ttname"><a href="class_drive.html#a226132a9cdc7eaf3deb9929919b4d28f">Drive::speed</a></div><div class="ttdeci">virtual void speed(float left, float right)</div><div class="ttdef"><b>Definition:</b> Drive.h:239</div></div>
+<div class="ttc" id="aclass_drive_html_a52b05247d861070fa5c781b85fa14323"><div class="ttname"><a href="class_drive.html#a52b05247d861070fa5c781b85fa14323">Drive::power</a></div><div class="ttdeci">virtual void power(float left, float right)</div><div class="ttdef"><b>Definition:</b> Drive.h:250</div></div>
+<div class="ttc" id="aclass_drive_html_a888baccc9f5823aa32fd07fd0a29343b"><div class="ttname"><a href="class_drive.html#a888baccc9f5823aa32fd07fd0a29343b">Drive::brake</a></div><div class="ttdeci">virtual void brake(void)</div><div class="ttdef"><b>Definition:</b> Drive.h:259</div></div>
+<div class="ttc" id="aclass_drive_html_ac774ab32d2cc2f5aab38b5ec8342b852"><div class="ttname"><a href="class_drive.html#ac774ab32d2cc2f5aab38b5ec8342b852">Drive::Drive</a></div><div class="ttdeci">Drive(Motor &amp;motorLeft, Motor &amp;motorRight, int vmax, float wheelDiameter, float trackWidth)</div><div class="ttdef"><b>Definition:</b> Drive.h:142</div></div>
+<div class="ttc" id="aclass_drive_html_adc4fc4c332bd61876d6282c4d5fccb89"><div class="ttname"><a href="class_drive.html#adc4fc4c332bd61876d6282c4d5fccb89">Drive::track</a></div><div class="ttdeci">virtual void track(float distance, float angle)</div><div class="ttdef"><b>Definition:</b> Drive.h:226</div></div>
+<div class="ttc" id="aclass_motor_html"><div class="ttname"><a href="class_motor.html">Motor</a></div><div class="ttdoc">Basisklasse zur Steuerung eines Encoder-Motors.</div><div class="ttdef"><b>Definition:</b> Motor.h:22</div></div>
+<div class="ttc" id="aclass_motor_html_a43aa9c26cd425e2a6bca869515681ed0"><div class="ttname"><a href="class_motor.html#a43aa9c26cd425e2a6bca869515681ed0">Motor::setPosition</a></div><div class="ttdeci">virtual void setPosition(short speed, int position)</div><div class="ttdef"><b>Definition:</b> Motor.h:100</div></div>
+<div class="ttc" id="aclass_motor_html_a6450fc94fe4ba577673acbd2715c2e3a"><div class="ttname"><a href="class_motor.html#a6450fc94fe4ba577673acbd2715c2e3a">Motor::setSpeed</a></div><div class="ttdeci">virtual void setSpeed(short speed)</div><div class="ttdef"><b>Definition:</b> Motor.h:89</div></div>
+<div class="ttc" id="aclass_motor_html_a888baccc9f5823aa32fd07fd0a29343b"><div class="ttname"><a href="class_motor.html#a888baccc9f5823aa32fd07fd0a29343b">Motor::brake</a></div><div class="ttdeci">virtual void brake(void)</div><div class="ttdef"><b>Definition:</b> Motor.h:70</div></div>
+<div class="ttc" id="aclass_motor_html_a91c5dab130c51e0cc9a560f42bda0691"><div class="ttname"><a href="class_motor.html#a91c5dab130c51e0cc9a560f42bda0691">Motor::setPower</a></div><div class="ttdeci">virtual void setPower(short power)</div><div class="ttdef"><b>Definition:</b> Motor.h:79</div></div>
+<div class="ttc" id="aclass_motor_html_a9f3c77aed35d83ad08ccad20a9c0ba1b"><div class="ttname"><a href="class_motor.html#a9f3c77aed35d83ad08ccad20a9c0ba1b">Motor::getPosition</a></div><div class="ttdeci">virtual int getPosition(void)</div><div class="ttdef"><b>Definition:</b> Motor.h:128</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_413f4e031a85da0d68269c6fd2f76e1c.html">Src</a></li><li class="navelem"><b>Drive.h</b></li>
+    <li class="footer">Erzeugt von <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>
