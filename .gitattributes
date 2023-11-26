@@ -12,7 +12,9 @@
 *.js   text eol=lf
 *.css   text eol=lf
 *.svg   text eol=lf
-
+*.bat   text eol=
+Doxyfile text eol=lf
 
 # Denote all files that are truly binary and should not be modified.
 *.exe
+*.ebp
