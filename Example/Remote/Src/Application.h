@@ -41,6 +41,11 @@ class Application : public ApplicationBase
       monitor.print(1, "Remote (%.6s,%.5s)",__DATE__,__TIME__);
 
       Drive::Odometrie odo( robo );
+      
+      if( speed == -1 ) // speed never set
+      {
+        speed = 50;
+      }
 
       while(1)
       {
