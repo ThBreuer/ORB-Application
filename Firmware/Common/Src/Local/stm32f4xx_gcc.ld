@@ -37,7 +37,7 @@ SEARCH_DIR(.)
 /* Memory Spaces Definitions */
 MEMORY
 {
-    ROM  (rx) : ORIGIN = 0x08020004, LENGTH = 255K
+    ROM  (rx) : ORIGIN = 0x080E0008, LENGTH = 255K
     RAM (rwx) : ORIGIN = 0x10000000, LENGTH = 64K
   CCRAM (rwx) : ORIGIN = 0x10000000, LENGTH = 32K
 }
@@ -179,7 +179,11 @@ SECTIONS
 	/* Check if data + heap + stack exceeds RAM limit */
 	ASSERT(__StackLimit >= __HeapLimit, "region RAM overflowed with stack")
 	
-	.startAppSegment 0x8080000 : 
+	.flagSegment 0x080E0000:
+	{
+		KEEP(*(.flagSection))
+	}
+	.startAppSegment 0x080E0004 : 
 	{
 		KEEP(*(.startAppSection))
 	}

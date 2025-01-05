@@ -22,10 +22,16 @@ int foo( BYTE para, ORBlocal &orb )
 //*******************************************************************
 #if defined _KEIL
 /// Keil 5:
- unsigned x2 __attribute__((at( 0x8020000))) = (unsigned )foo; /* RO */
+ unsigned x2 __attribute__((at( 0x80E0004))) = (unsigned )foo; /* RO */
+  __attribute__((section(".flagSection"), used))
+  const uint8_t flag = 0b11110000;
 
 // Keil armclang 6:
-//  unsigned x2 __attribute__((section( ".ARM.__at_0x8020000"	))) = (unsigned )foo; /* RO */
+//  unsigned x2 __attribute__((section( ".ARM.__at_0x80E0004"	))) = (unsigned )foo; /* RO */
 #elif defined _GCC
   int __attribute__((section(".startAppSection"))) x2 = (unsigned )foo; /* RO */
+  
+  __attribute__((section(".flagSection"), used))
+  const uint8_t flag = 0b11110000;
+
 #endif
