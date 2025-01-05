@@ -1,0 +1,153 @@
+# depslib dependency file v1.0
+1727723973 source:c:\users\nils9\desktop\bachelorarbeit\orb\orb-application\example\benchmark\_template\lib\startupgcc.s
+	"Firmware/Common/Src/Local/startup_stm32f407xx.S"
+
+1727723973 c:\users\nils9\desktop\bachelorarbeit\orb\orb-application\firmware\common\src\local\startup_stm32f407xx.s
+
+1727723973 source:c:\users\nils9\desktop\bachelorarbeit\orb\orb-application\example\benchmark\_template\lib\entry.cpp
+	"Firmware/Common/Src/Local/entry.cpp"
+
+1728565908 c:\users\nils9\desktop\bachelorarbeit\orb\orb-application\firmware\common\src\local\entry.cpp
+	"Common/Src/ORBlocal.h"
+
+1728315939 c:\users\nils9\desktop\bachelorarbeit\orb\orb-application\firmware\common\src\orblocal.h
+	"ORB.h"
+	<stdarg.h>
+
+1728315944 c:\users\nils9\desktop\bachelorarbeit\orb\orb-application\firmware\common\src\orb.h
+	<stdarg.h>
+	<inttypes.h>
+
+1727723973 source:c:\users\nils9\desktop\bachelorarbeit\orb\orb-application\example\benchmark\_template\lib\main.cpp
+	"Firmware/Common/Src/Local/main.cpp"
+
+1727723973 c:\users\nils9\desktop\bachelorarbeit\orb\orb-application\firmware\common\src\local\main.cpp
+	<stdio.h>
+	<string.h>
+	<inttypes.h>
+	"Common/Src/ORBlocal.h"
+	"ModelServo.h"
+	"Motor.h"
+	"Motor/MB_Motor.h"
+	"Motor/LEGO_Motor.h"
+	"Motor/GenericMotor.h"
+	"EncoderServo.h"
+	"Drive.h"
+	"Digital.h"
+	"Sensor.h"
+	"Sensor/Ev3_Color.h"
+	"Sensor/Ev3_Gyro.h"
+	"Sensor/Ev3_Infrared.h"
+	"Sensor/Ev3_Touch.h"
+	"Sensor/Ev3_Ultrasonic.h"
+	"Sensor/MB_LineFollower.h"
+	"Sensor/MB_Ultrasonic.h"
+	"Sensor/Nxt_Light.h"
+	"Sensor/Nxt_Ultrasonic.h"
+	"Sensor/Nxt_Touch.h"
+	"Sensor/Orb_Sensor.h"
+	"Memory.h"
+	"Timer.h"
+	"Monitor.h"
+	"Application.h"
+
+1727723973 c:\users\nils9\desktop\bachelorarbeit\orb\orb-application\middleware\src\modelservo.h
+	"Common/Src/ORB.h"
+
+1727723973 c:\users\nils9\desktop\bachelorarbeit\orb\orb-application\middleware\src\motor.h
+	"Common/Src/ORB.h"
+
+1727723973 c:\users\nils9\desktop\bachelorarbeit\orb\orb-application\middleware\src\motor\mb_motor.h
+	"Common/Src/ORB.h"
+	"Motor.h"
+
+1727723973 c:\users\nils9\desktop\bachelorarbeit\orb\orb-application\middleware\src\motor\lego_motor.h
+	"Common/Src/ORB.h"
+	"Motor.h"
+
+1727723973 c:\users\nils9\desktop\bachelorarbeit\orb\orb-application\middleware\src\motor\genericmotor.h
+	"Common/Src/ORB.h"
+	"Motor.h"
+
+1727723973 c:\users\nils9\desktop\bachelorarbeit\orb\orb-application\middleware\src\encoderservo.h
+	"Common/Src/ORB.h"
+	"Motor.h"
+	"math.h"
+
+1727723973 c:\users\nils9\desktop\bachelorarbeit\orb\orb-application\middleware\src\drive.h
+	"Common/Src/ORB.h"
+	<math.h>
+
+1727723973 c:\users\nils9\desktop\bachelorarbeit\orb\orb-application\middleware\src\digital.h
+	"Common/Src/ORB.h"
+
+1727723973 c:\users\nils9\desktop\bachelorarbeit\orb\orb-application\middleware\src\sensor.h
+	"Common/Src/ORB.h"
+	"Memory.h"
+
+1727723973 c:\users\nils9\desktop\bachelorarbeit\orb\orb-application\middleware\src\memory.h
+
+1727723973 c:\users\nils9\desktop\bachelorarbeit\orb\orb-application\middleware\src\sensor\ev3_color.h
+	"Common/Src/ORB.h"
+	"Sensor.h"
+
+1727723973 c:\users\nils9\desktop\bachelorarbeit\orb\orb-application\middleware\src\sensor\ev3_gyro.h
+	"Common/Src/ORB.h"
+	"Sensor.h"
+
+1727723973 c:\users\nils9\desktop\bachelorarbeit\orb\orb-application\middleware\src\sensor\ev3_infrared.h
+	"Common/Src/ORB.h"
+	"Sensor.h"
+
+1727723973 c:\users\nils9\desktop\bachelorarbeit\orb\orb-application\middleware\src\sensor\ev3_touch.h
+	"Common/Src/ORB.h"
+	"Sensor.h"
+
+1727723973 c:\users\nils9\desktop\bachelorarbeit\orb\orb-application\middleware\src\sensor\ev3_ultrasonic.h
+	"Common/Src/ORB.h"
+	"Sensor.h"
+
+1727723973 c:\users\nils9\desktop\bachelorarbeit\orb\orb-application\middleware\src\sensor\mb_linefollower.h
+	"Common/Src/ORB.h"
+	"Sensor.h"
+
+1727723973 c:\users\nils9\desktop\bachelorarbeit\orb\orb-application\middleware\src\sensor\mb_ultrasonic.h
+	"Common/Src/ORB.h"
+	"Sensor.h"
+
+1727723973 c:\users\nils9\desktop\bachelorarbeit\orb\orb-application\middleware\src\sensor\nxt_light.h
+	"Common/Src/ORB.h"
+	"Sensor.h"
+
+1727723973 c:\users\nils9\desktop\bachelorarbeit\orb\orb-application\middleware\src\sensor\nxt_ultrasonic.h
+	"Common/Src/ORB.h"
+	"Sensor.h"
+
+1727723973 c:\users\nils9\desktop\bachelorarbeit\orb\orb-application\middleware\src\sensor\nxt_touch.h
+	"Common/Src/ORB.h"
+	"Sensor.h"
+
+1727723973 c:\users\nils9\desktop\bachelorarbeit\orb\orb-application\middleware\src\sensor\orb_sensor.h
+	"Common/Src/ORB.h"
+
+1727723973 c:\users\nils9\desktop\bachelorarbeit\orb\orb-application\middleware\src\timer.h
+	"Common/Src/ORB.h"
+
+1729251603 c:\users\nils9\desktop\bachelorarbeit\orb\orb-application\middleware\src\monitor.h
+	"Common/Src/ORB.h"
+
+1728988033 c:\users\nils9\desktop\bachelorarbeit\orb\orb-application\example\benchmark\_template\src\application.h
+	"Common/Src/ORB.h"
+
+1727723973 source:c:\users\nils9\desktop\bachelorarbeit\orb\orb-application\example\benchmark\calculations\lib\main.cpp
+	"Firmware/Common/Src/Local/main.cpp"
+
+1729255733 c:\users\nils9\desktop\bachelorarbeit\orb\orb-application\example\benchmark\calculations\src\application.h
+	"Common/Src/ORB.h"
+
+1727723973 source:c:\users\nils9\desktop\bachelorarbeit\orb\orb-application\example\benchmark\calculations\lib\startupgcc.s
+	"Firmware/Common/Src/Local/startup_stm32f407xx.S"
+
+1727723973 source:c:\users\nils9\desktop\bachelorarbeit\orb\orb-application\example\benchmark\calculations\lib\entry.cpp
+	"Firmware/Common/Src/Local/entry.cpp"
+
