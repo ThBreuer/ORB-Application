@@ -1,6 +1,7 @@
 #include "%ORB%/Middleware/MicroPython/monitor.py"
 #include "%ORB%/Middleware/MicroPython/motor.py"
 #include "%ORB%/Middleware/MicroPython/drive.py"
+#include "%ORB%/Middleware/MicroPython/memory.py"
 
 #********************************************************************
 #
@@ -15,6 +16,7 @@ import monitor
 from monitor import keys
 
 mon = Monitor()
+mon.setText( 1, "Remote v00.98" )
 
 robo = Drive( motorLeft     = LEGO_Motor( Motor.M1, Motor.REVERSE ),
               motorRight    = LEGO_Motor( Motor.M4, Motor.NORMAL  ),        
@@ -23,11 +25,8 @@ robo = Drive( motorLeft     = LEGO_Motor( Motor.M1, Motor.REVERSE ),
               trackWidth    =  140   # Abstand der Räder (mm)
              )
 
-#Memory::Item speed;
-speed =  -1
-
-if speed == -1:
-  speed = 50
+_speed = MemoryItem(50)
+speed = _speed.value
 
 while True:
   mon.setText( 2, "Speed:   "+str(speed)          +" mm/s" )
@@ -54,8 +53,9 @@ while True:
     else: 
       speed = 0
 
-#  if event == keys.C1: 
-#    Memory::store()
+  if event == keys.C1: 
+    _speed.value = speed
+    Memory.store()
 
   state = mon.getKeyState()
   if state == 0: 
