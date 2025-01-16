@@ -16,7 +16,7 @@ drive = Drive( motorLeft     = MB_Motor( Motor.M1, Motor.REVERSE ),
                trackWidth    =  144)
  
 mon = Monitor()
-mon.setText(0,"Drive v00.98")
+mon.print(0,"Drive v00.98")
 
 while True:
   event = mon.getKeyEvent()
@@ -44,8 +44,8 @@ while True:
   if event == keys.A7:
     drive.speed(100,100)
     time.wait(1000) 
-    mon.setText(1,"d="+str(int(drive.distance()))+" w="+str(int(drive.angle())))
+    mon.print(1,"d="+str(int(drive.distance()))+" w="+str(int(drive.angle())))
     d=drive.distance()
     drive.track(distance=-d,angle=0)
 
-  mon.setText(1,"d="+str(int(drive.distance()))+" w="+str(int(drive.angle())))
+  mon.print(1,"d="+str(int(drive.distance()))+" w="+str(int(drive.angle())))

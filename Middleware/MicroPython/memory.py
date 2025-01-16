@@ -9,9 +9,12 @@ class Memory:
   
   #------------------------------------------------------------------
   @staticmethod
-  def addItem(size,item):
-    item.addr = Memory._addr
-    Memory._addr = Memory._addr + size + 1
+  def addItem(size,item, addr):
+    if addr == 0:
+        item.addr = Memory._addr
+        Memory._addr = Memory._addr + size + 1
+    else:
+        item.addr = addr
     Memory._lst.append(item)
   
   #------------------------------------------------------------------
@@ -25,10 +28,10 @@ class Memory:
 class MemoryItem:
 
   #------------------------------------------------------------------
-  def __init__(self, default):
-    self.addr = 0
+  def __init__(self, default, addr = 0):
+    self.addr = addr
     self.value = 0
-    Memory.addItem(9,self)
+    Memory.addItem(9,self, addr)
     
     try:
       b = memory.getMemory(self.addr, 9 )

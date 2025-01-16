@@ -13,7 +13,7 @@ class Monitor:
     monitor.setText(2,"")
     monitor.setText(3,"")
      
-  def setText(self,line,string):
+  def print(self,line,string):
     monitor.setText(line-1,string)
      
   def getKeyState(self):

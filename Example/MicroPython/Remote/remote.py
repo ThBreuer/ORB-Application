@@ -16,22 +16,22 @@ import monitor
 from monitor import keys
 
 mon = Monitor()
-mon.setText( 1, "Remote v00.98" )
+mon.print( 1, "Remote v00.98" )
 
-robo = Drive( motorLeft     = LEGO_Motor( Motor.M1, Motor.REVERSE ),
-              motorRight    = LEGO_Motor( Motor.M4, Motor.NORMAL  ),        
-              vmax          = 2500,  # Max. Geschwindigkeit (1/1000 Umdrehungen pro Sekunde)
-              wheelDiameter =   56,  # Durchmesser der Räder (mm)
-              trackWidth    =  140   # Abstand der Räder (mm)
+robo = Drive( motorLeft     = MB_Motor( Motor.M1, Motor.REVERSE ),
+              motorRight    = MB_Motor( Motor.M4, Motor.NORMAL  ),        
+              vmax          = 1500,  # Max. Geschwindigkeit (1/1000 Umdrehungen pro Sekunde)
+              wheelDiameter =   64,  # Durchmesser der Räder (mm)
+              trackWidth    =   92   # Abstand der Räder (mm)
              )
 
 _speed = MemoryItem(50)
 speed = _speed.value
 
 while True:
-  mon.setText( 2, "Speed:   "+str(speed)          +" mm/s" )
-  mon.setText( 3, "Strecke: "+str(robo.distance())+" mm"   )
-  mon.setText( 4, "Winkel:  "+str(robo.angle())   +" °"    )
+  mon.print( 2, "Speed:   "+str(speed)          +" mm/s" )
+  mon.print( 3, "Strecke: "+str(robo.distance())+" mm"   )
+  mon.print( 4, "Winkel:  "+str(robo.angle())   +" °"    )
 
   event = mon.getKeyEvent()
   if event == keys.A1:

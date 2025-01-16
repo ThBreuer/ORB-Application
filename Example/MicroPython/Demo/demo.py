@@ -17,15 +17,15 @@ tim = Timer(duration=0)
 
 #-------------------------------------------------------------
 def anzeigen( zeit ):
-  mon.setText( 4, "Laufzeit: "+str(zeit)+" ms")
+  mon.print( 4, "Laufzeit: "+str(zeit)+" ms")
 
 #-------------------------------------------------------------
 def stoppuhr():
   while True:
-    mon.setText( 4, "Startbereit!" )
+    mon.print( 4, "Startbereit!" )
     if mon.getKeyState() == keys.A1: ## startTaste.get():
       tim.reset()
-      mon.setText( 4, "Messung läuft ..." )
+      mon.print( 4, "Messung läuft ..." )
       tim.wait(100);  # Taster entprellen
       while mon.getKeyState() == keys.A1: #startTaste.get() == False:
         pass
@@ -42,13 +42,13 @@ def laufzeit():
 
 #-------------------------------------------------------------
 if getArg() == 0: # Stoppuhr
-  mon.setText( 1, "Stoppuhr" )
-  mon.setText( 2, "Taste an S1: Messen" )
-  mon.setText( 3, "Taste an S2: Reset"  )
+  mon.print( 1, "Stoppuhr" )
+  mon.print( 2, "Taste an S1: Messen" )
+  mon.print( 3, "Taste an S2: Reset"  )
   stoppuhr()
 
 else: # Laufzeitmessung
-  mon.setText( 1, "Laufzeit" );
-  mon.setText( 2, "" );
-  mon.setText( 3, "Taste an S2: Zwischenzeit" );
+  mon.print( 1, "Laufzeit" );
+  mon.print( 2, "" );
+  mon.print( 3, "Taste an S2: Zwischenzeit" );
   laufzeit()

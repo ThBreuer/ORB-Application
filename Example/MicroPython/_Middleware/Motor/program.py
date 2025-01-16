@@ -15,7 +15,7 @@ m1 = MB_Motor(port=0,orientation=1)
 s = m1.getPosition()
 
 mon = Monitor()
-mon.setText(0,"Motor v00.96")
+mon.print(0,"Motor v00.96")
 
 while True:
 
@@ -28,9 +28,9 @@ while True:
     s = s - 1000
     print("moveto:"+str(s))
 
-  mon.setText(1,"Power="+str(m1.getPower()))
-  mon.setText(2,"Speed="+str(m1.getSpeed()))
-  mon.setText(3,"Pos  ="+str(m1.getPosition())+" ("+str(s)+")")
+  mon.print(1,"Power="+str(m1.getPower()))
+  mon.print(2,"Speed="+str(m1.getSpeed()))
+  mon.print(3,"Pos  ="+str(m1.getPosition())+" ("+str(s)+")")
 
   m1.setPosition(2000,s)
   

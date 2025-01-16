@@ -15,12 +15,12 @@ def getLable(key):
     return "..."
 
 mon = Monitor()
-mon.setText(0,"Monitor v00.98")
+mon.print(0,"Monitor v00.98")
 while True:
     state = mon.getKeyState()
-    mon.setText(2,"KeyState: "+str(state)+" "+getLable(state))
+    mon.print(2,"KeyState: "+str(state)+" "+getLable(state))
     
     event = mon.getKeyEvent()
     if event != 0:
-        mon.setText(3,"KeyEvent: "+str(event)+" "+getLable(event))
+        mon.print(3,"KeyEvent: "+str(event)+" "+getLable(event))
         print("KeyEvent: \2"+str(event)+" \3"+getLable(event))
