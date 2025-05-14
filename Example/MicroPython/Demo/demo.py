@@ -12,8 +12,6 @@ import time
 
 mon = Monitor()
 tim = Timer(duration=0)
-#    Nxt_Touch  startTaste;Sensor::S1
-#    Nxt_Touch  pauseTaste;Sensor::S2
 
 #-------------------------------------------------------------
 def anzeigen( zeit ):
@@ -21,17 +19,12 @@ def anzeigen( zeit ):
 
 #-------------------------------------------------------------
 def stoppuhr():
+  mon.print( 4, "Startbereit!" )
   while True:
-    mon.print( 4, "Startbereit!" )
-    if mon.getKeyState() == keys.A1: ## startTaste.get():
+    if mon.getKeyEvent() == keys.A1: # start
       tim.reset()
-      mon.print( 4, "Messung läuft ..." )
-      tim.wait(100);  # Taster entprellen
-      while mon.getKeyState() == keys.A1: #startTaste.get() == False:
-        pass
-      anzeigen( tim.get() )
-      while mon.getKeyState() != keys.A2: # pauseTaste.get() == False:
-        pass
+      while not mon.getKeyEvent() == keys.A2: # stop
+        anzeigen( tim.get() )
 
 #-------------------------------------------------------------
 def laufzeit():
@@ -43,12 +36,10 @@ def laufzeit():
 #-------------------------------------------------------------
 if getArg() == 0: # Stoppuhr
   mon.print( 1, "Stoppuhr" )
-  mon.print( 2, "Taste an S1: Messen" )
-  mon.print( 3, "Taste an S2: Reset"  )
+  mon.print( 2, "Taste \"start\" oder \"stop\"" )
   stoppuhr()
 
 else: # Laufzeitmessung
-  mon.print( 1, "Laufzeit" );
-  mon.print( 2, "" );
-  mon.print( 3, "Taste an S2: Zwischenzeit" );
+  mon.print( 1, "Laufzeit" )
+  mon.print( 2, "Taste \"stop\": Zwischenzeit" )
   laufzeit()
