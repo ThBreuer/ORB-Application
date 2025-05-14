@@ -9,12 +9,10 @@ class Sensor:
   
   def __init__(self,port,type, mode,option):
     self._s = sensor(port = port, type = type, mode = mode, option = option)
-    self.gain = 1
-    self.offset = 0
+    self.gain = 1.0
+    self.offset = 0.0
     self.kalib0 = MemoryItem(default=  0,addr = 0x1000 + port*0x20)
     self.kalib1 = MemoryItem(default=100,addr = 0x1000 + port*0x20 + 0x10)
-    self.gain = 1
-    self.offset = 0
     self.kalib()
 
   def kalib(self):
@@ -118,9 +116,13 @@ class MB_LineFollower(Sensor):
   def __init__(self,port):
     Sensor.__init__(self,port,type = sensor.Analog, mode = 0, option = 0x2222)
     
-  def get(self):
-    return self._s.getValueExt(2) | (self._s.getValueExt(3)<<1)
-    
+  def get(self, ch):
+    if ch == 0:
+        return self._s.getValueExt(2) 
+    if ch == 1:
+        return self._s.getValueExt(3)
+    return 0
+
 #********************************************************************
 class MB_Ultrasonic(Sensor):
   def __init__(self,port):
@@ -129,7 +131,7 @@ class MB_Ultrasonic(Sensor):
     self.offset = 30    # 5mm/0.17
     
   def getRaw(self):
-    return self._s.get()["values"][0] & 0xFFF
+    return self._s.get()["values"][0]
     
 #********************************************************************
 class Nxt_Light(Sensor):
@@ -158,7 +160,7 @@ class Nxt_Touch(Sensor):
     
   def get(self):
     return self._s.get()["values"][0]
-    
+
 #********************************************************************
 class Nxt_Ultrasonic(Sensor):
   def __init__(self,port):
@@ -168,4 +170,3 @@ class Nxt_Ultrasonic(Sensor):
     
   def getRaw(self):
     return self._s.get()["values"][0]
-    

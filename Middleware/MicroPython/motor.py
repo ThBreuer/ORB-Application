@@ -37,7 +37,7 @@ class Motor:
 class MB_Motor(Motor):
   def __init__(self,port,orientation):
     Motor.__init__(self,port,orientation)
-    self._m.config(ticks = 144, acc = 50,kp = 30, ki = 30)
+    self._m.config(ticks = 144, acc = 30,kp = 30, ki = 30)
 
 class LEGO_Motor(Motor):
   def __init__(self,port,orientation):

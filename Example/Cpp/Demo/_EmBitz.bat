@@ -1,1 +1,1 @@
-start "" /B Lib\EmBitz\main.ebp
+@start "" /B Lib\EmBitz\main.ebp

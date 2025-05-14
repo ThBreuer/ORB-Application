@@ -87,7 +87,7 @@ def testGyroTouch():
          
         mon.print(1,"Ev3_Gyro ("+str(m1)+")   : "+str(s1.get()))
         mon.print(2,"Ev3_Touch      : "               +str(s2.get()))
-        mon.print(3,"MB_LineFollower: "               +str(s3.get()))
+        mon.print(3,"MB_LineFollower: "               +str(s3.get(0))+","+str(s3.get(1)))
         mon.print(4,"Nxt_Touch      : "               +str(s4.get()))
 
 

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <EmBitz_project_file>
-	<EmBitzVersion release="2.50" revision="0" />
+	<EmBitzVersion release="2.63" revision="0" />
 	<FileVersion major="2" minor="0" />
 	<Project>
 		<Option title="main" />
 		<Option pch_mode="2" />
 		<Option compiler="armgcc_eb" />
-		<Option virtualFolders="Lib\;" />
+		<Option virtualFolders="Lib\;Layout\;" />
 		<Build>
-			<Target title="ORB-01.00">
+			<Target title="default">
 				<Option output=".\..\..\Bin\main.elf" />
 				<Option object_output=".\..\..\Bin" />
 				<Option type="0" />
@@ -94,7 +94,7 @@
 			<Add directory=".\Src" />
 			<Add directory="${ORB}" />
 			<Add directory="${ORB}\Firmware" />
-			<Add directory="${ORB}\Middleware\Src" />
+			<Add directory="${ORB}\Middleware\Cpp" />
 		</Compiler>
 		<Cpp>
 			<Add option="-fno-exceptions" />
@@ -111,7 +111,6 @@
 			<Add option="-lstdc++" />
 			<Add option="-Wl,--gc-sections" />
 		</Linker>
-		<Unit filename="..\..\Src\Application.h" />
 		<Unit filename="..\..\Lib\entry.cpp">
 			<Option compilerVar="CC" />
 			<Option virtualFolder="Lib\" />
@@ -120,14 +119,21 @@
 			<Option compilerVar="CC" />
 			<Option virtualFolder="Lib\" />
 		</Unit>
-		<Unit filename="..\..\Src\ORB-Monitor-Tasten.txt" />
 		<Unit filename="..\..\Lib\startupGCC.S">
 			<Option compilerVar="CC" />
 			<Option virtualFolder="Lib\" />
 		</Unit>
+		<Unit filename="..\..\Src\Application.h" />
+		<Unit filename="..\..\Src\ORB-Monitor-Tasten.txt">
+			<Option virtualFolder="Layout\" />
+		</Unit>
 		<Extensions>
 			<code_completion />
-			<debugger />
+			<debugger>
+				<target_debugging_settings target="default">
+					<debug_interface description="" options="10" reg_filter="0" probe="STlink" device="auto" speed="" bus_address="" serial="" defines="" scripts="" flash_size="" ram_size="" vcc_voltage="" verbose="4" unwind="2" rstType="0" use_jtag="false" disable_cache="false" enable_semi="false" close_eblink="false" gdb_reset="" gdb_reset_remote="reset;" gdb_before_conn="" gdb_after_conn="" use_remote="false" ip_address="" ip_port="" path="" executable="" start_server="true" arguments="" flash_verify="false" flash_run="false" />
+				</target_debugging_settings>
+			</debugger>
 			<envvars />
 			<DoxyBlocks>
 				<comment_style block="0" line="0" />
