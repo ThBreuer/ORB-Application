@@ -1,1 +1,1 @@
-doxygen Doxyfile
+doxygen Doxyfile_MicroPython.doxyfile

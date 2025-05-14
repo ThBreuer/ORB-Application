@@ -1,0 +1,213 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ORB - Middleware: Cpp - Application Programming Interface (API): Monitor.h Quellcode</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">ORB - Middleware: Cpp - Application Programming Interface (API)
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Erzeugt von Doxygen 1.10.0 -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('_monitor_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle"><div class="title">Monitor.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">//*******************************************************************</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">//*******************************************************************</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#ifndef _MONITOR_H</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#define _MONITOR_H</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">//*******************************************************************</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;Common/Src/ORB.h&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">//*******************************************************************</span></div>
+<div class="foldopen" id="foldopen00019" data-start="{" data-end="};">
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="class_monitor.html">   19</a></span><span class="keyword">class </span><a class="code hl_class" href="class_monitor.html">Monitor</a></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>{</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="comment">//---------------------------------------------------------------</span></div>
+<div class="foldopen" id="foldopen00025" data-start="{" data-end="};">
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="class_monitor.html#af730212f515b312dcc4787bdfc783561">   25</a></span>    <span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="class_monitor.html#af730212f515b312dcc4787bdfc783561aef01cca384e64a2564258bb53bd43373">   27</a></span>      <a class="code hl_enumvalue" href="class_monitor.html#af730212f515b312dcc4787bdfc783561aef01cca384e64a2564258bb53bd43373">Keine_Taste</a> = 0, </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="class_monitor.html#af730212f515b312dcc4787bdfc783561a683c09f2d6ea3a705f43e32a8d728ef7">   29</a></span>      <a class="code hl_enumvalue" href="class_monitor.html#af730212f515b312dcc4787bdfc783561a683c09f2d6ea3a705f43e32a8d728ef7">Taste_A1</a>  =  1,  </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="class_monitor.html#af730212f515b312dcc4787bdfc783561aafe2e127cdcfda0018b7240aab808e38">   30</a></span>      <a class="code hl_enumvalue" href="class_monitor.html#af730212f515b312dcc4787bdfc783561aafe2e127cdcfda0018b7240aab808e38">Taste_A2</a>  =  2,  </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="class_monitor.html#af730212f515b312dcc4787bdfc783561a35c3f5b61e8d2ae96bdb6b1619b6be2a">   31</a></span>      <a class="code hl_enumvalue" href="class_monitor.html#af730212f515b312dcc4787bdfc783561a35c3f5b61e8d2ae96bdb6b1619b6be2a">Taste_A3</a>  =  3,  </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="class_monitor.html#af730212f515b312dcc4787bdfc783561abc35d81a0622074ee179f13f5565ef03">   32</a></span>      <a class="code hl_enumvalue" href="class_monitor.html#af730212f515b312dcc4787bdfc783561abc35d81a0622074ee179f13f5565ef03">Taste_A4</a>  =  4,  </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="class_monitor.html#af730212f515b312dcc4787bdfc783561acda7a84b753e05e7a0064888a55316a5">   33</a></span>      <a class="code hl_enumvalue" href="class_monitor.html#af730212f515b312dcc4787bdfc783561acda7a84b753e05e7a0064888a55316a5">Taste_A5</a>  =  5,  </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="class_monitor.html#af730212f515b312dcc4787bdfc783561a477858161b5688d65ab3133268b7b7fe">   34</a></span>      <a class="code hl_enumvalue" href="class_monitor.html#af730212f515b312dcc4787bdfc783561a477858161b5688d65ab3133268b7b7fe">Taste_A6</a>  =  6,  </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="class_monitor.html#af730212f515b312dcc4787bdfc783561afc1f88462a40ed7c8ec89546b329eb5d">   35</a></span>      <a class="code hl_enumvalue" href="class_monitor.html#af730212f515b312dcc4787bdfc783561afc1f88462a40ed7c8ec89546b329eb5d">Taste_A7</a>  =  7,  </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="class_monitor.html#af730212f515b312dcc4787bdfc783561ad04dce774699af44ca0bd155578a3255">   36</a></span>      <a class="code hl_enumvalue" href="class_monitor.html#af730212f515b312dcc4787bdfc783561ad04dce774699af44ca0bd155578a3255">Taste_A8</a>  =  8,  </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="class_monitor.html#af730212f515b312dcc4787bdfc783561a229c3c976ecd7c2798bae235425feefa">   38</a></span>      <a class="code hl_enumvalue" href="class_monitor.html#af730212f515b312dcc4787bdfc783561a229c3c976ecd7c2798bae235425feefa">Taste_B1</a>  =  9,  </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="class_monitor.html#af730212f515b312dcc4787bdfc783561ae1dc9e23a2949cf97b163eecc9b73a81">   39</a></span>      <a class="code hl_enumvalue" href="class_monitor.html#af730212f515b312dcc4787bdfc783561ae1dc9e23a2949cf97b163eecc9b73a81">Taste_B2</a>  = 10,  </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="class_monitor.html#af730212f515b312dcc4787bdfc783561ab91d93045d7f29acef37dbb1484c4167">   40</a></span>      <a class="code hl_enumvalue" href="class_monitor.html#af730212f515b312dcc4787bdfc783561ab91d93045d7f29acef37dbb1484c4167">Taste_B3</a>  = 11,  </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="class_monitor.html#af730212f515b312dcc4787bdfc783561a399d16d7ffd4f68d8b0a60370acbb4f9">   42</a></span>      <a class="code hl_enumvalue" href="class_monitor.html#af730212f515b312dcc4787bdfc783561a399d16d7ffd4f68d8b0a60370acbb4f9">Taste_B4</a>  = 12,  </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="class_monitor.html#af730212f515b312dcc4787bdfc783561a93865f6d6fcbed9cb209f82a718fc912">   43</a></span>      <a class="code hl_enumvalue" href="class_monitor.html#af730212f515b312dcc4787bdfc783561a93865f6d6fcbed9cb209f82a718fc912">Taste_B5</a>  = 13,  </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="class_monitor.html#af730212f515b312dcc4787bdfc783561a0a867e849274bc21078b1e49bba3b032">   44</a></span>      <a class="code hl_enumvalue" href="class_monitor.html#af730212f515b312dcc4787bdfc783561a0a867e849274bc21078b1e49bba3b032">Taste_B6</a>  = 14,  </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="class_monitor.html#af730212f515b312dcc4787bdfc783561ad43660efb25ff1fb6d54835f9d68305b">   46</a></span>      <a class="code hl_enumvalue" href="class_monitor.html#af730212f515b312dcc4787bdfc783561ad43660efb25ff1fb6d54835f9d68305b">Taste_B7</a>  = 15,  </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="class_monitor.html#af730212f515b312dcc4787bdfc783561ab1d65e16194a6368fd976e9228fd8b70">   47</a></span>      <a class="code hl_enumvalue" href="class_monitor.html#af730212f515b312dcc4787bdfc783561ab1d65e16194a6368fd976e9228fd8b70">Taste_B8</a>  = 16,  </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="class_monitor.html#af730212f515b312dcc4787bdfc783561ab91cb1bd7db15d4b9cc6a5a2b4dfce66">   48</a></span>      <a class="code hl_enumvalue" href="class_monitor.html#af730212f515b312dcc4787bdfc783561ab91cb1bd7db15d4b9cc6a5a2b4dfce66">Taste_B9</a>  = 17,  </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="class_monitor.html#af730212f515b312dcc4787bdfc783561a0eb57417e7aea3f1786029a8d5b0a673">   50</a></span>      <a class="code hl_enumvalue" href="class_monitor.html#af730212f515b312dcc4787bdfc783561a0eb57417e7aea3f1786029a8d5b0a673">Taste_B10</a> = 18,  </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="class_monitor.html#af730212f515b312dcc4787bdfc783561a651db9205335d42a7a5e952fbf5f9f7b">   51</a></span>      <a class="code hl_enumvalue" href="class_monitor.html#af730212f515b312dcc4787bdfc783561a651db9205335d42a7a5e952fbf5f9f7b">Taste_B11</a> = 19,  </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="class_monitor.html#af730212f515b312dcc4787bdfc783561afef39595ffd7cbfe2072db5e678ec9b6">   52</a></span>      <a class="code hl_enumvalue" href="class_monitor.html#af730212f515b312dcc4787bdfc783561afef39595ffd7cbfe2072db5e678ec9b6">Taste_B12</a> = 20,  </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="class_monitor.html#af730212f515b312dcc4787bdfc783561a39f6e4ef6b5d4c83e66d2d5e2ad68894">   54</a></span>      <a class="code hl_enumvalue" href="class_monitor.html#af730212f515b312dcc4787bdfc783561a39f6e4ef6b5d4c83e66d2d5e2ad68894">Taste_C1</a>  = 21,  </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    } <a class="code hl_enumeration" href="class_monitor.html#af730212f515b312dcc4787bdfc783561">Taste_enum</a>;</div>
+</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="comment">//---------------------------------------------------------------</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    BYTE  lastEvent;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    ORB  &amp;orb;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="comment">//---------------------------------------------------------------</span></div>
+<div class="foldopen" id="foldopen00068" data-start="{" data-end="}">
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="class_monitor.html#a100059082e25aaa2ca83c0c59ca4d6bc">   68</a></span>    <a class="code hl_function" href="class_monitor.html#a100059082e25aaa2ca83c0c59ca4d6bc">Monitor</a>( <span class="keywordtype">void</span> )</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    : orb( *orbPtr )</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    {</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>      <a class="code hl_function" href="class_monitor.html#ae683fe63c33c388e9ba1c6392dd477eb">clear</a>();</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    }</div>
+</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="comment">//---------------------------------------------------------------</span></div>
+<div class="foldopen" id="foldopen00077" data-start="{" data-end="}">
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="class_monitor.html#ae683fe63c33c388e9ba1c6392dd477eb">   77</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_monitor.html#ae683fe63c33c388e9ba1c6392dd477eb">clear</a>( <span class="keywordtype">void</span> )</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    {</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>      lastEvent = 0;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>      <a class="code hl_function" href="class_monitor.html#a8ab4524ca84b9b3f94d482971c7024f8">print</a>(1,<span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>      <a class="code hl_function" href="class_monitor.html#a8ab4524ca84b9b3f94d482971c7024f8">print</a>(2,<span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>      <a class="code hl_function" href="class_monitor.html#a8ab4524ca84b9b3f94d482971c7024f8">print</a>(3,<span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>      <a class="code hl_function" href="class_monitor.html#a8ab4524ca84b9b3f94d482971c7024f8">print</a>(4,<span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    }</div>
+</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="comment">//---------------------------------------------------------------</span></div>
+<div class="foldopen" id="foldopen00095" data-start="{" data-end="}">
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="class_monitor.html#a8ab4524ca84b9b3f94d482971c7024f8">   95</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_monitor.html#a8ab4524ca84b9b3f94d482971c7024f8">print</a>( BYTE line, <span class="keyword">const</span> <span class="keywordtype">char</span> *format, ...)</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    {</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>      <span class="keywordflow">if</span>( 1 &lt;= line &amp;&amp; line &lt;= 4 )</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>      {</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        va_list argzeiger;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        va_start ( argzeiger, format );</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        orb.setMonitorText( line-1, format, argzeiger );</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        va_end(argzeiger);</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>      }</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    }</div>
+</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <span class="comment">//---------------------------------------------------------------</span></div>
+<div class="foldopen" id="foldopen00113" data-start="{" data-end="}">
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="class_monitor.html#acebbc08a04675ffccbf40f6e5ce216c3">  113</a></span>    BYTE <a class="code hl_function" href="class_monitor.html#acebbc08a04675ffccbf40f6e5ce216c3">getKeyState</a>( <span class="keywordtype">void</span> )</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    {</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>      <span class="keywordflow">return</span>( orb.getMonitorKey() );</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    }</div>
+</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    <span class="comment">//---------------------------------------------------------------</span></div>
+<div class="foldopen" id="foldopen00125" data-start="{" data-end="}">
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="class_monitor.html#a72756a9d6684037cf9b3a7c9b085b0d2">  125</a></span>    BYTE <a class="code hl_function" href="class_monitor.html#a72756a9d6684037cf9b3a7c9b085b0d2">getKeyEvent</a>( <span class="keywordtype">void</span> )</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    {</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>      BYTE <span class="keyword">event</span> = orb.getMonitorKey() ;</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>       <span class="keywordflow">if</span>( event != lastEvent )</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>       {</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>         lastEvent = event;</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>         <span class="keywordflow">return</span>( lastEvent );</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>       }</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>       <span class="keywordflow">return</span>( 0 );</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    }</div>
+</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>};</div>
+</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclass_monitor_html"><div class="ttname"><a href="class_monitor.html">Monitor</a></div><div class="ttdoc">Text-Ausgabe und Tasten-Eingabe über ORB-Monitor.</div><div class="ttdef"><b>Definition</b> Monitor.h:20</div></div>
+<div class="ttc" id="aclass_monitor_html_a100059082e25aaa2ca83c0c59ca4d6bc"><div class="ttname"><a href="class_monitor.html#a100059082e25aaa2ca83c0c59ca4d6bc">Monitor::Monitor</a></div><div class="ttdeci">Monitor(void)</div><div class="ttdef"><b>Definition</b> Monitor.h:68</div></div>
+<div class="ttc" id="aclass_monitor_html_a72756a9d6684037cf9b3a7c9b085b0d2"><div class="ttname"><a href="class_monitor.html#a72756a9d6684037cf9b3a7c9b085b0d2">Monitor::getKeyEvent</a></div><div class="ttdeci">BYTE getKeyEvent(void)</div><div class="ttdef"><b>Definition</b> Monitor.h:125</div></div>
+<div class="ttc" id="aclass_monitor_html_a8ab4524ca84b9b3f94d482971c7024f8"><div class="ttname"><a href="class_monitor.html#a8ab4524ca84b9b3f94d482971c7024f8">Monitor::print</a></div><div class="ttdeci">void print(BYTE line, const char *format,...)</div><div class="ttdef"><b>Definition</b> Monitor.h:95</div></div>
+<div class="ttc" id="aclass_monitor_html_acebbc08a04675ffccbf40f6e5ce216c3"><div class="ttname"><a href="class_monitor.html#acebbc08a04675ffccbf40f6e5ce216c3">Monitor::getKeyState</a></div><div class="ttdeci">BYTE getKeyState(void)</div><div class="ttdef"><b>Definition</b> Monitor.h:113</div></div>
+<div class="ttc" id="aclass_monitor_html_ae683fe63c33c388e9ba1c6392dd477eb"><div class="ttname"><a href="class_monitor.html#ae683fe63c33c388e9ba1c6392dd477eb">Monitor::clear</a></div><div class="ttdeci">void clear(void)</div><div class="ttdef"><b>Definition</b> Monitor.h:77</div></div>
+<div class="ttc" id="aclass_monitor_html_af730212f515b312dcc4787bdfc783561"><div class="ttname"><a href="class_monitor.html#af730212f515b312dcc4787bdfc783561">Monitor::Taste_enum</a></div><div class="ttdeci">Taste_enum</div><div class="ttdef"><b>Definition</b> Monitor.h:26</div></div>
+<div class="ttc" id="aclass_monitor_html_af730212f515b312dcc4787bdfc783561a0a867e849274bc21078b1e49bba3b032"><div class="ttname"><a href="class_monitor.html#af730212f515b312dcc4787bdfc783561a0a867e849274bc21078b1e49bba3b032">Monitor::Taste_B6</a></div><div class="ttdeci">@ Taste_B6</div><div class="ttdef"><b>Definition</b> Monitor.h:44</div></div>
+<div class="ttc" id="aclass_monitor_html_af730212f515b312dcc4787bdfc783561a0eb57417e7aea3f1786029a8d5b0a673"><div class="ttname"><a href="class_monitor.html#af730212f515b312dcc4787bdfc783561a0eb57417e7aea3f1786029a8d5b0a673">Monitor::Taste_B10</a></div><div class="ttdeci">@ Taste_B10</div><div class="ttdef"><b>Definition</b> Monitor.h:50</div></div>
+<div class="ttc" id="aclass_monitor_html_af730212f515b312dcc4787bdfc783561a229c3c976ecd7c2798bae235425feefa"><div class="ttname"><a href="class_monitor.html#af730212f515b312dcc4787bdfc783561a229c3c976ecd7c2798bae235425feefa">Monitor::Taste_B1</a></div><div class="ttdeci">@ Taste_B1</div><div class="ttdef"><b>Definition</b> Monitor.h:38</div></div>
+<div class="ttc" id="aclass_monitor_html_af730212f515b312dcc4787bdfc783561a35c3f5b61e8d2ae96bdb6b1619b6be2a"><div class="ttname"><a href="class_monitor.html#af730212f515b312dcc4787bdfc783561a35c3f5b61e8d2ae96bdb6b1619b6be2a">Monitor::Taste_A3</a></div><div class="ttdeci">@ Taste_A3</div><div class="ttdef"><b>Definition</b> Monitor.h:31</div></div>
+<div class="ttc" id="aclass_monitor_html_af730212f515b312dcc4787bdfc783561a399d16d7ffd4f68d8b0a60370acbb4f9"><div class="ttname"><a href="class_monitor.html#af730212f515b312dcc4787bdfc783561a399d16d7ffd4f68d8b0a60370acbb4f9">Monitor::Taste_B4</a></div><div class="ttdeci">@ Taste_B4</div><div class="ttdef"><b>Definition</b> Monitor.h:42</div></div>
+<div class="ttc" id="aclass_monitor_html_af730212f515b312dcc4787bdfc783561a39f6e4ef6b5d4c83e66d2d5e2ad68894"><div class="ttname"><a href="class_monitor.html#af730212f515b312dcc4787bdfc783561a39f6e4ef6b5d4c83e66d2d5e2ad68894">Monitor::Taste_C1</a></div><div class="ttdeci">@ Taste_C1</div><div class="ttdef"><b>Definition</b> Monitor.h:54</div></div>
+<div class="ttc" id="aclass_monitor_html_af730212f515b312dcc4787bdfc783561a477858161b5688d65ab3133268b7b7fe"><div class="ttname"><a href="class_monitor.html#af730212f515b312dcc4787bdfc783561a477858161b5688d65ab3133268b7b7fe">Monitor::Taste_A6</a></div><div class="ttdeci">@ Taste_A6</div><div class="ttdef"><b>Definition</b> Monitor.h:34</div></div>
+<div class="ttc" id="aclass_monitor_html_af730212f515b312dcc4787bdfc783561a651db9205335d42a7a5e952fbf5f9f7b"><div class="ttname"><a href="class_monitor.html#af730212f515b312dcc4787bdfc783561a651db9205335d42a7a5e952fbf5f9f7b">Monitor::Taste_B11</a></div><div class="ttdeci">@ Taste_B11</div><div class="ttdef"><b>Definition</b> Monitor.h:51</div></div>
+<div class="ttc" id="aclass_monitor_html_af730212f515b312dcc4787bdfc783561a683c09f2d6ea3a705f43e32a8d728ef7"><div class="ttname"><a href="class_monitor.html#af730212f515b312dcc4787bdfc783561a683c09f2d6ea3a705f43e32a8d728ef7">Monitor::Taste_A1</a></div><div class="ttdeci">@ Taste_A1</div><div class="ttdef"><b>Definition</b> Monitor.h:29</div></div>
+<div class="ttc" id="aclass_monitor_html_af730212f515b312dcc4787bdfc783561a93865f6d6fcbed9cb209f82a718fc912"><div class="ttname"><a href="class_monitor.html#af730212f515b312dcc4787bdfc783561a93865f6d6fcbed9cb209f82a718fc912">Monitor::Taste_B5</a></div><div class="ttdeci">@ Taste_B5</div><div class="ttdef"><b>Definition</b> Monitor.h:43</div></div>
+<div class="ttc" id="aclass_monitor_html_af730212f515b312dcc4787bdfc783561aafe2e127cdcfda0018b7240aab808e38"><div class="ttname"><a href="class_monitor.html#af730212f515b312dcc4787bdfc783561aafe2e127cdcfda0018b7240aab808e38">Monitor::Taste_A2</a></div><div class="ttdeci">@ Taste_A2</div><div class="ttdef"><b>Definition</b> Monitor.h:30</div></div>
+<div class="ttc" id="aclass_monitor_html_af730212f515b312dcc4787bdfc783561ab1d65e16194a6368fd976e9228fd8b70"><div class="ttname"><a href="class_monitor.html#af730212f515b312dcc4787bdfc783561ab1d65e16194a6368fd976e9228fd8b70">Monitor::Taste_B8</a></div><div class="ttdeci">@ Taste_B8</div><div class="ttdef"><b>Definition</b> Monitor.h:47</div></div>
+<div class="ttc" id="aclass_monitor_html_af730212f515b312dcc4787bdfc783561ab91cb1bd7db15d4b9cc6a5a2b4dfce66"><div class="ttname"><a href="class_monitor.html#af730212f515b312dcc4787bdfc783561ab91cb1bd7db15d4b9cc6a5a2b4dfce66">Monitor::Taste_B9</a></div><div class="ttdeci">@ Taste_B9</div><div class="ttdef"><b>Definition</b> Monitor.h:48</div></div>
+<div class="ttc" id="aclass_monitor_html_af730212f515b312dcc4787bdfc783561ab91d93045d7f29acef37dbb1484c4167"><div class="ttname"><a href="class_monitor.html#af730212f515b312dcc4787bdfc783561ab91d93045d7f29acef37dbb1484c4167">Monitor::Taste_B3</a></div><div class="ttdeci">@ Taste_B3</div><div class="ttdef"><b>Definition</b> Monitor.h:40</div></div>
+<div class="ttc" id="aclass_monitor_html_af730212f515b312dcc4787bdfc783561abc35d81a0622074ee179f13f5565ef03"><div class="ttname"><a href="class_monitor.html#af730212f515b312dcc4787bdfc783561abc35d81a0622074ee179f13f5565ef03">Monitor::Taste_A4</a></div><div class="ttdeci">@ Taste_A4</div><div class="ttdef"><b>Definition</b> Monitor.h:32</div></div>
+<div class="ttc" id="aclass_monitor_html_af730212f515b312dcc4787bdfc783561acda7a84b753e05e7a0064888a55316a5"><div class="ttname"><a href="class_monitor.html#af730212f515b312dcc4787bdfc783561acda7a84b753e05e7a0064888a55316a5">Monitor::Taste_A5</a></div><div class="ttdeci">@ Taste_A5</div><div class="ttdef"><b>Definition</b> Monitor.h:33</div></div>
+<div class="ttc" id="aclass_monitor_html_af730212f515b312dcc4787bdfc783561ad04dce774699af44ca0bd155578a3255"><div class="ttname"><a href="class_monitor.html#af730212f515b312dcc4787bdfc783561ad04dce774699af44ca0bd155578a3255">Monitor::Taste_A8</a></div><div class="ttdeci">@ Taste_A8</div><div class="ttdef"><b>Definition</b> Monitor.h:36</div></div>
+<div class="ttc" id="aclass_monitor_html_af730212f515b312dcc4787bdfc783561ad43660efb25ff1fb6d54835f9d68305b"><div class="ttname"><a href="class_monitor.html#af730212f515b312dcc4787bdfc783561ad43660efb25ff1fb6d54835f9d68305b">Monitor::Taste_B7</a></div><div class="ttdeci">@ Taste_B7</div><div class="ttdef"><b>Definition</b> Monitor.h:46</div></div>
+<div class="ttc" id="aclass_monitor_html_af730212f515b312dcc4787bdfc783561ae1dc9e23a2949cf97b163eecc9b73a81"><div class="ttname"><a href="class_monitor.html#af730212f515b312dcc4787bdfc783561ae1dc9e23a2949cf97b163eecc9b73a81">Monitor::Taste_B2</a></div><div class="ttdeci">@ Taste_B2</div><div class="ttdef"><b>Definition</b> Monitor.h:39</div></div>
+<div class="ttc" id="aclass_monitor_html_af730212f515b312dcc4787bdfc783561aef01cca384e64a2564258bb53bd43373"><div class="ttname"><a href="class_monitor.html#af730212f515b312dcc4787bdfc783561aef01cca384e64a2564258bb53bd43373">Monitor::Keine_Taste</a></div><div class="ttdeci">@ Keine_Taste</div><div class="ttdoc">Es ist keine Taste gedrückt.</div><div class="ttdef"><b>Definition</b> Monitor.h:27</div></div>
+<div class="ttc" id="aclass_monitor_html_af730212f515b312dcc4787bdfc783561afc1f88462a40ed7c8ec89546b329eb5d"><div class="ttname"><a href="class_monitor.html#af730212f515b312dcc4787bdfc783561afc1f88462a40ed7c8ec89546b329eb5d">Monitor::Taste_A7</a></div><div class="ttdeci">@ Taste_A7</div><div class="ttdef"><b>Definition</b> Monitor.h:35</div></div>
+<div class="ttc" id="aclass_monitor_html_af730212f515b312dcc4787bdfc783561afef39595ffd7cbfe2072db5e678ec9b6"><div class="ttname"><a href="class_monitor.html#af730212f515b312dcc4787bdfc783561afef39595ffd7cbfe2072db5e678ec9b6">Monitor::Taste_B12</a></div><div class="ttdeci">@ Taste_B12</div><div class="ttdef"><b>Definition</b> Monitor.h:52</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_882abde7eca0231e2bae1ceefe5e858a.html">Cpp</a></li><li class="navelem"><b>Monitor.h</b></li>
+    <li class="footer">Erzeugt von <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>
