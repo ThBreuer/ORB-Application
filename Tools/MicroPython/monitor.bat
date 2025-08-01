@@ -4,7 +4,13 @@ echo ### Compiling
 echo Directory: %cd%
 echo Program: %1
 
+del "%cd%\%~1.bin"
+
 "%ORB%\Tools\MicroPython\mpy-build.exe" -f "%~1.py" -o "%~1.bin"
+
+IF %ERRORLEVEL% NEQ 0 ( 
+   exit 1
+)
 
 rmdir /S /Q .\Bin     2>>nul
 
