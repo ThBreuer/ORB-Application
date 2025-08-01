@@ -10,6 +10,7 @@ class Motor:
   
   def __init__(self,port,orientation):
     self._orientation = orientation
+    self._orientationInv = 1/orientation
     self._m = motor(port = port)
     self._m.set(mode = motor.POWER_MODE, speed = 0)
 
@@ -26,20 +27,20 @@ class Motor:
     self._m.set(mode = motor.MOVETO_MODE, speed = speed, position = self._orientation*position)
 
   def getPower(self):
-    return self._orientation*self._m.get()["power"]
+    return self._orientationInv*self._m.get()["power"]
 
   def getSpeed(self):
-    return self._orientation*self._m.get()["speed"]
+    return self._orientationInv*self._m.get()["speed"]
 
   def getPosition(self):
-    return self._orientation*self._m.get()["position"]
+    return self._orientationInv*self._m.get()["position"]
 
 class MB_Motor(Motor):
   def __init__(self,port,orientation):
     Motor.__init__(self,port,orientation)
-    self._m.config(ticks = 144, acc = 30,kp = 30, ki = 30)
+    self._m.config(ticks = 144, acc = 30,kp = 25, ki = 25)
 
 class LEGO_Motor(Motor):
   def __init__(self,port,orientation):
     Motor.__init__(self,port,orientation)
-    self._m.config(ticks = 72, acc = 50,kp = 50, ki = 30)
+    self._m.config(ticks = 72, acc = 40,kp = 40, ki = 25)

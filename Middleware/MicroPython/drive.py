@@ -38,12 +38,13 @@ class Drive:
 
       time.wait( 10 )
 
-      while(   abs( self.mLi.getPosition() - targetLi ) > 1  
-            or abs( self.mRe.getPosition() - targetRe ) > 1 ):
+      while(   abs( self.mLi.getPosition() - targetLi ) > 6  
+            or abs( self.mRe.getPosition() - targetRe ) > 6 ):
         self.mLi.setPosition(  speed=self.vmax * left/dges,  position=targetLi )
         self.mRe.setPosition(  speed=self.vmax * right/dges, position=targetRe )
-
       time.wait( 10 )
+      self.mLi.setSpeed( 0 )
+      self.mRe.setSpeed( 0 )
     
     def track( self,distance, angle ):
       """!Move the robot.
