@@ -93,7 +93,7 @@ class Drive
         }
 
         //-----------------------------------------------------------
-        /*! Liefert die zurückgelegte Strecke (in mm) seit letztem 
+        /*! Liefert die zurückgelegte Strecke (in mm) seit letztem
             Reset der Messung
         */
         int getDistance( void )
@@ -102,14 +102,14 @@ class Drive
         }
 
         //-----------------------------------------------------------
-        /*! Liefert den Drehwinkel (in Grad) seit letztem 
+        /*! Liefert den Drehwinkel (in Grad) seit letztem
             Reset der Messung
         */
         int getAngle( void )
         {
           return( angle.get() );
         }
-        
+
       private:
         //-----------------------------------------------------------
         Angle  angle;
@@ -167,7 +167,7 @@ class Drive
       mLi.setSpeed( 0 );
       mRe.setSpeed( 0 );
 
-      orb.wait( 200 );
+      orb.wait( 20 );
 
       int targetLi = mLi.getPosition() + li;
       int targetRe = mRe.getPosition() + re;
@@ -176,17 +176,20 @@ class Drive
       // dass diese gleichzeitig ihr Ziel erreichen
       float dges  = (fabs((float)li) + fabs((float)re));
 
-      mLi.setPosition(  vmax * (float)li/dges, targetLi );
-      mRe.setPosition(  vmax * (float)re/dges, targetRe );
-
-      orb.wait( 200 );
-
-      while(   fabs( (float)mLi.getPosition() - targetLi ) > 1
-            || fabs( (float)mRe.getPosition() - targetRe ) > 1 )
+      if( dges != 0 )
       {
-      }
+        mLi.setPosition(  vmax * (float)li/dges, targetLi );
+        mRe.setPosition(  vmax * (float)re/dges, targetRe );
 
-      orb.wait( 200 );
+        orb.wait( 20 );
+
+        while(   fabs( (float)mLi.getPosition() - targetLi ) > 1
+              || fabs( (float)mRe.getPosition() - targetRe ) > 1 )
+        {
+        }
+
+        orb.wait( 20 );
+      }
     }
 
   private:
@@ -261,5 +264,11 @@ class Drive
       mLi.brake();
       mRe.brake();
     }
+
+    virtual void setVmax(int vmax)
+    {
+      this->vmax = vmax;
+    }
+
 };
 #endif
